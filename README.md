@@ -1,1 +1,238 @@
-# portfolioo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tushar Raj | Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #ffffff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1e90ff;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: rgb(255, 255, 255);
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgb(228, 227, 227);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile {
+      text-align: center;
+    }
+
+    .profile img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      border: 4px solid #1e90ff;
+    }
+
+    h2 {
+      color: #3b72a9;
+      margin-top: 10px;
+    }
+
+    h3 {
+      color: #1e90ff;
+      margin-top: 40px;
+      border-bottom: 2px solid #1e90ff;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .project-image {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .skills-bar {
+      margin: 10px 0;
+    }
+
+    .bar {
+      background: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    .bar-fill {
+      height: 20px;
+      line-height: 20px;
+      color: white;
+      padding-left: 10px;
+      background: #1e90ff;
+    }
+
+    .certificates {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+      justify-content: center;
+    }
+
+    .certificates img {
+      width: 250px;
+      height: 180px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact p {
+      margin: 5px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e90ff;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .certificates {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tushar Raj</h1>
+    <p>Student | Web Developer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <div class="profile">
+      <img src="photo.jpg" alt="Tushar's Photo" />
+      <h2>Tushar Raj</h2>
+    </div>
+
+    <section id="about">
+      <h3>About Me</h3>
+      <p>I am a B.Tech student pursuing Computer Science and Engineering at SRM Institute of Science and Technology, Kattankulathur (KTR). I have a keen interest in web development, software engineering, and emerging technologies. I enjoy building practical projects, exploring new tools, and continuously improving my skills to stay industry-ready.</p>
+    </section>
+
+    <section id="education">
+      <h3>Education</h3>
+      <ul>
+        <li>B.Tech in Computer Science – SRM Institute of Science and Technology (2022 - 2026)</li>
+        <li>High School – Rps Residential school</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h3>Projects</h3>
+      <ul>
+        <li><strong>Campus Cloud:</strong> A university management system built with Spring Boot and MySQL.</li>
+        <li><strong>Smart Parking System:</strong> An IoT-based application for efficient vehicle parking management.</li>
+      </ul>
+      
+
+    <section id="skills">
+      <h3>Skills</h3>
+      <div class="skills-bar">
+        <p>HTML/CSS</p>
+        <div class="bar"><div class="bar-fill" style="width: 90%;">90%</div></div>
+
+        <p>JavaScript</p>
+        <div class="bar"><div class="bar-fill" style="width: 80%;">80%</div></div>
+
+        <p>Java</p>
+        <div class="bar"><div class="bar-fill" style="width: 75%;">75%</div></div>
+
+        <p>Spring Boot</p>
+        <div class="bar"><div class="bar-fill" style="width: 70%;">70%</div></div>
+
+        <p>MySQL</p>
+        <div class="bar"><div class="bar-fill" style="width: 80%;">80%</div></div>
+      </div>
+    </section>
+
+    <section id="certificates">
+      <h3>Certificates</h3>
+      <div class="certificates">
+        <img src="ntpl.jpg" alt="Certificate 1" />
+        <img src="ntpl1.jpg" alt="Certificate 2" />
+        <!-- Add more as needed -->
+      </div>
+    </section>
+
+    <section id="contact">
+      <h3>Contact</h3>
+      <div class="contact">
+        <p>Email: tusharraj123xyz1@gmail.com</p>
+        <p>Phone: +91-7991155855</p>
+        <p>GitHub: <a href="https://github.com/tusharraj79" target="_blank">yourgithub</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/tushar-raj-76302334b/" target="_blank">yourprofile</a></p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Tushar Raj. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
